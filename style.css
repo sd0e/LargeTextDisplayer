@@ -1,3 +1,37 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    background-color: rgb(255, 255, 92);
+    height: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.headerTitle {
+    font-size: 25px;
+}
+
+.page1 {
+    text-align: center;
+}
+
+.navigation {
+    text-decoration: none;
+}
+
+.page2 {
+    text-align: center;
+}
+
+.marquee {
+    font-size: 300px;
+}
+
+marquee {
+    top: 0;
+    margin: 0;
+}
