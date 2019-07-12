@@ -1,5 +1,5 @@
 function addCookie(){
-    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value); + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value); + "&background=" + encodeURIComponent(document.getElementById("background").value);;
+    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value);
     window.location.href = url;
 }
 
