@@ -4,5 +4,5 @@ function addCookie(){
 
 function loadLocalStorage(){
     var LargeTextText = getURLParameter("text");
-    document.getElementById("marquee").value = LargeTextText;
+    document.getElementById("marquee").innerHTML = LargeTextText;
 }
