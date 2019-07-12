@@ -1,5 +1,6 @@
 function addCookie(){
-    window.location.href = "https://sebastiandoe5.github.io/LargeTextDisplayer/display.html?text=" + encodeURIComponent(document.getElementById("text").innerHTML));
+    var url = "https://sebastiandoe5.github.io/LargeTextDisplayer/display.html?text=" + encodeURIComponent(document.getElementById("text").innerHTML));
+    window.location.href = url;
 }
 
 function loadLocalStorage(){
