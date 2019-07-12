@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="script.js"></script>
+        <script src="src/jscolor.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>Large Text Displayer</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -21,6 +22,14 @@
             <p>Enter your text here:</p>
             <br>
             <input type="text" name="text" id="text">
+            <br><br><br>
+            <p>Choose your text colour:</p>
+            <br>
+            <input type="text" name="foreground" id="foreground" class="jscolor" value="000000">
+            <br><br><br>
+            <p>Choose your background colour:</p>
+            <br>
+            <input type="text" name="background" id="background" class="jscolor" value="ffffff">
             <br><br><br><br>
             <button id="submit" onclick="addCookie();">View your text</button>
         </main>
