@@ -1,6 +1,6 @@
 function addCookie() {
     var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value);
-    window.location.href = url;
+    window.open(url);
 }
 
 function loadLocalStorage() {
@@ -10,4 +10,8 @@ function loadLocalStorage() {
     document.getElementById("marquee").innerHTML = LargeTextText;
     document.getElementById("background").style.color = "#" + LargeTextForeground;
     document.getElementById("background").style.backgroundColor = "#" + LargeTextBackground;
+}
+
+function back() {
+    window.close();
 }

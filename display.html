@@ -3,6 +3,7 @@
     <head>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <title>Large Text Displayer</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="icon" href="branding/Logo.png">
@@ -17,6 +18,7 @@
     </head>
     <body onload="loadLocalStorage();" id="background">
         <main class="display">
+            <button onclick="back();" class="back"><i class="fa fa-chevron-left"></i></button>
             <marquee scrollamount="70"><p class="marquee" id="marquee">This doesn't seem to be working. Try Google Chrome.</p></marquee>
         </main>
     </body>
