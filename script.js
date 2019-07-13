@@ -10,7 +10,7 @@ function loadLocalStorage() {
     var LargeTextSpeed = getURLParameter("speed")
     var LargeTextSize = getURLParameter("size")
     var LargeTextFontValue = getURLParameter("font")
-    if (LargeTextFontValue) = "1" {
+    if (LargeTextFontValue) == "1" {
         document.getElementById(".marquee").style.fontFamily = "Arial, Helvetica, sans-serif;";
     }
     document.getElementById("marquee").innerHTML = LargeTextText;
