@@ -5,7 +5,7 @@
         <script src="src/jscolor.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>Large Text Displayer</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Lato|Montserrat|Overpass|Pacifico|Roboto&display=swap" rel="stylesheet">
         <link rel="icon" href="branding/Logo.png">
         <link rel="shortcut-icon" href="branding/Logo.png">
         <link rel="apple-touch-icon" href="branding/Logo.png">
@@ -39,6 +39,23 @@
             <p>Choose your size:</p>
             <br>
             <input type="range" min="50" max="600" value="300" class="slider" id="sizeSlider">
+            <br><br><br>
+            <p>Choose your font:</p>
+            <br>
+            <select id="font">
+                <option value="0" class="roboto">Roboto</option>
+                <option value="1" class="arial">Arial</option>
+                <option value="2" class="comicSans">Comic Sans MS</option>
+                <option value="3" class="courierNew">Courier New</option>
+                <option value="4" class="dmSerifDisplay">DM Serif Display</option>
+                <option value="5" class="garamond">Garamond</option>
+                <option value="6" class="helvetica">Helvetica</option>
+                <option value="7" class="lato">Lato</option>
+                <option value="8" class="montserrat">Montserrat</option>
+                <option value="9" class="overpass">Overpass</option>
+                <option value="10" class="pacifico">Pacifico</option>
+                <option value="11" class="timesNewRoman">Times New Roman</option>
+            </select>
             <br><br><br><br>
             <button id="submit" onclick="addCookie();" class="submit" type="submit">View your text</button>
         </main>

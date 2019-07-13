@@ -1,5 +1,5 @@
 function addCookie() {
-    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value) + "&speed=" + encodeURIComponent(document.getElementById("speedSlider").value) + "&size=" + encodeURIComponent(document.getElementById("sizeSlider").value);
+    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value) + "&speed=" + encodeURIComponent(document.getElementById("speedSlider").value) + "&size=" + encodeURIComponent(document.getElementById("sizeSlider").value) + "&font=" + encodeURIComponent(document.getElementById("font").value);
     window.open(url);
 }
 
@@ -9,6 +9,10 @@ function loadLocalStorage() {
     var LargeTextBackground = getURLParameter("background")
     var LargeTextSpeed = getURLParameter("speed")
     var LargeTextSize = getURLParameter("size")
+    var LargeTextFontValue = getURLParameter("font")
+    if (LargeTextFontValue) = "1" {
+        document.getElementById(".marquee").style.fontFamily = "Arial, Helvetica, sans-serif;";
+    }
     document.getElementById("marquee").innerHTML = LargeTextText;
     document.getElementById("background").style.color = "#" + LargeTextForeground;
     document.getElementById("background").style.backgroundColor = "#" + LargeTextBackground;
