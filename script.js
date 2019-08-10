@@ -1,11 +1,12 @@
 function addCookie() {
-    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value) + encodeURIComponent(document.getElementById("bkgimg").value) + "&speed=" + encodeURIComponent(document.getElementById("speedSlider").value) + "&size=" + encodeURIComponent(document.getElementById("sizeSlider").value) + "&font=" + encodeURIComponent(document.getElementById("font").value);
+    var url = "display.html?text=" + encodeURIComponent(document.getElementById("text").value) + "&foreground=" + encodeURIComponent(document.getElementById("foreground").value) + "&background=" + encodeURIComponent(document.getElementById("background").value) + "&speed=" + encodeURIComponent(document.getElementById("speedSlider").value) + "&size=" + encodeURIComponent(document.getElementById("sizeSlider").value) + "&font=" + encodeURIComponent(document.getElementById("font").value);
     window.open(url);
 }
 
 function loadLocalStorage() {
     var LargeTextText = getURLParameter("text");
     var LargeTextForeground = getURLParameter("foreground");
+    var LargeTextBackground = getURLParameter("background");
     var LargeTextSpeed = getURLParameter("speed");
     var LargeTextSize = getURLParameter("size");
     var LargeTextFontValue = getURLParameter("font");
@@ -39,11 +40,6 @@ function loadLocalStorage() {
     document.getElementById("background").style.backgroundColor = "#" + LargeTextBackground;
     document.getElementById("marqueeTag").scrollAmount = LargeTextSpeed;
     document.getElementById("marquee").style.fontSize = LargeTextSize + "px";
-    if (LargeTextBackground.includes("http")) {
-        document.getElementById("background").style.backgroundImage = LargeTextBackground;
-    } else {
-        document.getElementById("background").style.backgroundColor = "#" + LargeTextBackground;
-    };
 }
 
 function back() {
