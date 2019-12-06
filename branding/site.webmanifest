@@ -1,7 +1,7 @@
 {
     "name": "Large Text Displayer",
     "short_name": "Large Text",
-    "scope" : "",
+    "scope" : "./",
     "icons": [
         {
             "src": "android-chrome-36x36.png",
@@ -49,7 +49,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#ff0000",
     "background_color": "#ffffff",
     "start_url": "index.html",
     "display": "standalone"
