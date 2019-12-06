@@ -54,7 +54,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js', { scope: '/LargeTextDisplayer/' })
+    navigator.serviceWorker.register('sw.js', { scope: './LargeTextDisplayer/' })
       .then(function(registration) {
             console.log('Service Worker Registered');
       });
