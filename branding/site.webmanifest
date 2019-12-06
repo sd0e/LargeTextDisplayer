@@ -1,7 +1,7 @@
 {
     "name": "Large Text Displayer",
     "short_name": "Large Text",
-    "scope" : "./LargeTextDisplayer/",
+    "scope" : "../LargeTextDisplayer/",
     "icons": [
         {
             "src": "android-chrome-36x36.png",
